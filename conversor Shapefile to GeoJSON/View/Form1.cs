@@ -22,11 +22,13 @@ namespace conversor_Shapefile_to_GeoJSON.View
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
+            button4.Enabled = false;
             IControl Convert = new Conversion();
             Convert.Converting(textBox1.Text, textBox2.Text);
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
+            button4.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
