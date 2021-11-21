@@ -47,8 +47,8 @@ namespace conversor_Shapefile_to_GeoJSON.View
         private void button4_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "GeoJSON|*.json";
-            saveFileDialog1.Title = "Geometry JSON File";
+            saveFileDialog1.Filter = "GeoJSON|*.geojson|JSON|*.json";
+            saveFileDialog1.Title = "Geometry JSON File|JSON File";
             saveFileDialog1.ShowDialog();
             if (saveFileDialog1.FileName != "")
                 textBox2.Text = saveFileDialog1.FileName;
